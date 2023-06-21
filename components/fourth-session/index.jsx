@@ -3,17 +3,10 @@
 import {
   Box,
   Text,
-  Link,
-  Wrap,
-  Button,
-  WrapItem,
   Container
 } from "@chakra-ui/react";
 
-import {
-  LinkIcon,
-  EmailIcon
-} from "@chakra-ui/icons";
+import { ButtonsLinks } from "../links";
 
 export function Fourth() {
   return (
@@ -35,82 +28,11 @@ export function Fourth() {
           </Text>
         </Box>
 
-        <Wrap
-          spacing={10}
-          marginTop={["50px"]}
-        >
-
-          <WrapItem>
-            <Button
-              variant={"outline"}
-              leftIcon={<LinkIcon />}
-            >
-              <Link
-                href="https://www.instagram.com/leev.eapp"
-                target="_blank"
-              >
-                <Text
-                  fontSize={"3xl"}
-                >
-                  Instagram
-                </Text>
-              </Link>
-            </Button>
-          </WrapItem>
-
-          <WrapItem>
-            <Button
-              variant={"outline"}
-              leftIcon={<LinkIcon />}
-            >
-              <Link
-                href="https://www.linkedin.com/company/leeve-app"
-                target="_blank"
-              >
-                <Text
-                  fontSize={"3xl"}
-                >
-                  Linkedin
-                </Text>
-              </Link>
-            </Button>
-          </WrapItem>
-
-          <WrapItem>
-            <Button
-              variant={"outline"}
-              leftIcon={<EmailIcon />}
-            >
-              <Link
-                href="mailto:leeve.app@hotmail.com"
-                target="_blank"
-              >
-                <Text
-                  fontSize={"3xl"}
-                >
-                  E-mail
-                </Text>
-              </Link>
-            </Button>
-          </WrapItem>
-
-          <WrapItem>
-            <Button
-              variant={"outline"}
-              leftIcon={<LinkIcon />}
-            >
-              <Link
-                href="#"
-              >
-                <Text
-                  fontSize={"3xl"}
-                >
-                  Acesse o site
-                </Text>
-              </Link>
-            </Button>
-          </WrapItem>
-        </Wrap>
+        <ButtonsLinks
+          marginValue={"50px"}
+          fontValue={"3xl"}
+          spacingWrap={12}
+        />
 
       </Box>
     </Container>

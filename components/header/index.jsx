@@ -4,11 +4,10 @@ import Image from "next/image";
 
 import {
   Box,
-  List,
   Container,
-  UnorderedList,
 } from "@chakra-ui/react";
 
+import { ListisActive } from "../list";
 import { MenuisOpen } from "../menu";
 import { ButtonisOpen } from "../Button";
 
@@ -45,16 +44,12 @@ export function Header() {
           <Box
             display={["none", "none", "none", "flex"]}
           >
-            <UnorderedList
-              fontSize={20}
-              display={"flex"}
-            >
-              <List margin={5}><a href="#">Home</a></List>
-              <List margin={5}><a href="#second-page">App</a></List>
-              <List margin={5}><a href="#third-page">Download</a></List>
-              <List margin={5}><a href="#links">Links</a></List>
-              <List margin={5}><a href="#footer">Notícia</a></List>
-            </UnorderedList>
+
+            <ListisActive
+              marginValue={5}
+              displayValue={"flex"}
+            />
+
           </Box>
 
           <Box
